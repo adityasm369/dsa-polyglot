@@ -1,0 +1,10 @@
+# Build output. Every language here compiles to /tmp or in-memory on purpose,
+# so this list is short by design rather than by neglect.
+*.o
+*.out
+*.class
+target/
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store

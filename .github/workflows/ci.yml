@@ -1,0 +1,37 @@
+name: all seven languages
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The runner already has gcc, g++, python3, node, go and a JDK. Rust is
+      # installed by default too; this pins what the run actually used so a
+      # failure can be reproduced.
+      - name: toolchain versions
+        run: |
+          gcc --version | head -1
+          g++ --version | head -1
+          javac -version
+          python3 --version
+          node --version
+          go version
+          rustc --version
+
+      - name: run every test
+        run: tools/run.sh
+
+      # The sanitiser is a separate step: a memory bug in the C solution should
+      # fail loudly and distinctly from a wrong answer.
+      - name: C and C++ under AddressSanitizer
+        run: |
+          for d in dsa/*/*/c dsa/*/*/cpp; do
+            [ -d "$d" ] || continue
+            echo "== $d"
+            (cd "$d" && make -s asan)
+          done

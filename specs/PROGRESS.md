@@ -3,24 +3,33 @@
 Honest status. A pattern is **complete** only when every problem in it has a
 spec, tests and seven passing implementations. Anything else says so.
 
-Last verified by running `tools/run.sh`: **2026-10-14**, 7 passed, 0 failed.
+Last verified by running `tools/run.sh`: **2026-10-14**, 14 passed, 0 failed,
+and 56 reported as `TODO` (the eight folders scaffolded for problems 3-10).
+
+**A correction.** The first version of this file claimed 7 passing for
+`two-sum`. One of those seven was a lie: `node --test` with no argument
+discovers `*.test.js`, and the file was named `test_solution.js`, so the runner
+found **zero files, ran nothing, and exited 0**. The files are now named
+`solution.test.js`, and `tools/run.sh` fails any language whose output shows a
+zero-test run -- a suite that reports success having executed nothing is worse
+than one that fails.
 
 ## Patterns
 
 | # | pattern | problems | status |
 |---|---|---|---|
 | 01 | arrays & hashing | two-sum ✅ · group-anagrams ⬜ · longest-consecutive ⬜ | **1 of 3 complete** |
-| 02 | two pointers | — | not started |
-| 03 | sliding window | — | not started |
-| 04 | stack | — | not started |
-| 05 | binary search | — | not started |
-| 06 | linked list | — | not started |
+| 02 | two pointers | valid-palindrome ✅ · trapping-rain-water ⬜ | **1 of 2 complete** |
+| 03 | sliding window | longest-substring ⬜ | scaffolded |
+| 04 | stack | valid-parentheses ⬜ | scaffolded |
+| 05 | binary search | binary-search ⬜ | scaffolded |
+| 06 | linked list | reverse-linked-list ⬜ · linked-list-cycle ⬜ | scaffolded |
 | 07 | trees | — | not started |
 | 08 | tries | — | not started |
 | 09 | heap / priority queue | — | not started |
 | 10 | backtracking | — | not started |
 | 11 | graphs | — | not started |
-| 12 | dynamic programming | — | not started |
+| 12 | dynamic programming | climbing-stairs ⬜ | scaffolded |
 | 13 | greedy | — | not started |
 | 14 | intervals | — | not started |
 | 15 | bit manipulation | — | not started |

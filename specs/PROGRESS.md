@@ -3,8 +3,14 @@
 Honest status. A pattern is **complete** only when every problem in it has a
 spec, tests and seven passing implementations. Anything else says so.
 
-Last verified by running `tools/run.sh`: **2026-10-14**, 14 passed, 0 failed,
-and 56 reported as `TODO` (the eight folders scaffolded for problems 3-10).
+Last verified by running `tools/run.sh`: **2026-10-14**, 21 passed, 0 failed,
+0 not yet written.
+
+The eight folders scaffolded for problems 3-10 are **not counted at all**,
+because `tools/run.sh` only walks a problem that has a `SPEC.md`. That is
+deliberate and follows rule 1: without a spec it is not a problem yet, it is an
+empty directory. (An earlier draft of this line claimed "56 TODO". It was
+wrong -- the runner reports 0, for the reason just given.)
 
 **A correction.** The first version of this file claimed 7 passing for
 `two-sum`. One of those seven was a lie: `node --test` with no argument
@@ -22,7 +28,7 @@ than one that fails.
 | 02 | two pointers | valid-palindrome ✅ · trapping-rain-water ⬜ | **1 of 2 complete** |
 | 03 | sliding window | longest-substring ⬜ | scaffolded |
 | 04 | stack | valid-parentheses ⬜ | scaffolded |
-| 05 | binary search | binary-search ⬜ | scaffolded |
+| 05 | binary search | binary-search ✅ | **complete** |
 | 06 | linked list | reverse-linked-list ⬜ · linked-list-cycle ⬜ | scaffolded |
 | 07 | trees | — | not started |
 | 08 | tries | — | not started |

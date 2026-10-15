@@ -58,5 +58,5 @@ file, written once by someone else.
 | | problem | difficulty | why it is here |
 |---|---|---|---|
 | 1 | [two-sum](two-sum/) | basic | the pattern in its smallest form |
-| 2 | group-anagrams | medium | hashing a *derived* key, not the value |
+| 2 | [group-anagrams](group-anagrams/) | medium | hashing a *derived* key, not the value |
 | 3 | longest-consecutive-sequence | hard | a set turns a sort into a scan |

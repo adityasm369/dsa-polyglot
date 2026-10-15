@@ -3,7 +3,7 @@
 Honest status. A pattern is **complete** only when every problem in it has a
 spec, tests and seven passing implementations. Anything else says so.
 
-Last verified by running `tools/run.sh`: **2026-10-15**, 49 passed, 0 failed,
+Last verified by running `tools/run.sh`: **2026-10-15**, 56 passed, 0 failed,
 0 not yet written.
 
 The eight folders scaffolded for problems 3-10 are **not counted at all**,
@@ -24,7 +24,7 @@ than one that fails.
 
 | # | pattern | problems | status |
 |---|---|---|---|
-| 01 | arrays & hashing | two-sum ✅ · group-anagrams ⬜ · longest-consecutive ⬜ | **1 of 3 complete** |
+| 01 | arrays & hashing | two-sum ✅ · group-anagrams ✅ · longest-consecutive ⬜ | **2 of 3 complete** |
 | 02 | two pointers | valid-palindrome ✅ · trapping-rain-water ⬜ | **1 of 2 complete** |
 | 03 | sliding window | longest-substring ⬜ | scaffolded |
 | 04 | stack | valid-parentheses ✅ | **complete** |

@@ -3,7 +3,7 @@
 Honest status. A pattern is **complete** only when every problem in it has a
 spec, tests and seven passing implementations. Anything else says so.
 
-Last verified by running `tools/run.sh`: **2026-10-15**, 28 passed, 0 failed,
+Last verified by running `tools/run.sh`: **2026-10-15**, 35 passed, 0 failed,
 0 not yet written.
 
 The eight folders scaffolded for problems 3-10 are **not counted at all**,
@@ -29,7 +29,7 @@ than one that fails.
 | 03 | sliding window | longest-substring ⬜ | scaffolded |
 | 04 | stack | valid-parentheses ⬜ | scaffolded |
 | 05 | binary search | binary-search ✅ | **complete** |
-| 06 | linked list | reverse-linked-list ✅ · linked-list-cycle ⬜ | **1 of 2 complete** |
+| 06 | linked list | reverse-linked-list ✅ · linked-list-cycle ✅ | **complete** |
 | 07 | trees | — | not started |
 | 08 | tries | — | not started |
 | 09 | heap / priority queue | — | not started |
